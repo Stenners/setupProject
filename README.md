@@ -13,7 +13,7 @@ To come:
 * Hot module replacement
 
 ## To run
-1. Instal with `yarn`
+1. Install with `yarn`
 2. Run dev server with `yarn start`
 3. Build with `yarn build`
 4. Profit
