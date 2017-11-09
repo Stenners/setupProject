@@ -1,1 +1,1 @@
-/* Do stuff*/
+console.log('something');

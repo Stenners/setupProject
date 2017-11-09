@@ -2,18 +2,13 @@ const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
-	entry: {
-		js: './src/index.js'
-	},
+	entry: ['./src/index.js', './src/scss/main.scss'],
 	output: {
 		path: path.resolve('dist'),
 		publicPath: 'dist',
-		filename: 'index_bundle.js'
+		filename: 'bundle.js'
 	},
-	// Automatically reload the page when compilation is done.
-	devServer: {
-		inline: true
-	},
+
 	module: {
 		rules: [{
 				test: /\.scss$/,
@@ -35,6 +30,6 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new ExtractTextPlugin("bundle.css")
+		new ExtractTextPlugin("main.css")
 	]
 }
