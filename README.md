@@ -5,9 +5,9 @@ Uses:
 * Webpack + DevServer 
 * Babel - ES6
 * SASS
+* Airbnb linting
 
 To come: 
-* Linting
 * DEV/PROD configs
 * Unit testing
 * Hot module replacement
